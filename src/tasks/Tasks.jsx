@@ -1,17 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { STATUS } from "../utils/data";
 import TaskColumn from "./taskColumn/TaskColumn";
 import { deleteTask, search } from "../services/scrud";
+import { ApplicationContext } from "../context/ApplicationContextProvider";
 
 function Tasks() {
-  const [tasks, setTasks] = useState([]);
+  const {
+    state: { tasks },
+    updateTasks,
+  } = useContext(ApplicationContext);
+
+
+  // Get All Tasks
   const getTasks = async () => {
     const response = await search({ path: "tasks" });
     const data = await response.json();
     response.status === 200
-      ? setTasks(data)
+      ? updateTasks(data)
       : alert(`${response.status} - Impossible de récupérer les datas`);
   };
+
+   // Delete by ID
   const removeTask = async (id) => {
     if (confirm("Vous voulez vraiment supprimer la tâche ?")) {
       const response = await deleteTask({ path: "tasks", id: id });
