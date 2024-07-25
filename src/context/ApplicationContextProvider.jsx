@@ -12,10 +12,10 @@ function ApplicationContextProvider({ children }) {
   }
 
   const addUser = (data) => {
-    dispatch({type: "ADD_USER", data: user})
+    dispatch({type: "ADD_USER", data})
   }
   const addToBasket = (data) => {
-    dispatch({type: "ADD_TO_BASKET", data: item})
+    dispatch({type: "ADD_TO_BASKET", data})
   }
   // const updateTasks = (tasks) => {
   //   setState((currentState) => {
