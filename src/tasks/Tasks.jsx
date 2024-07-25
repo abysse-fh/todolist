@@ -36,7 +36,7 @@ function Tasks() {
   }, []);
 
   return (
-    <main className="flex gap-8 w-full p-8 flex-wrap bg-blue-50">
+    <main className="flex gap-8 w-full p-8 flex-wrap bg-blue-50 dark:bg-slate-700">
       {STATUS.map((status, index) => (
         <TaskColumn
           key={index}
