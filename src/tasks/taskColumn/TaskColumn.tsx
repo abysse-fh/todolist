@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TaskItem from "../taskItem/TaskItem";
 
-function TaskColumn({ title, tasks, removeTask }) {
+function TaskColumn({ title, tasks, removeTask, addToCart }) {
 
   const countTasks = tasks.filter((task) => title === task.status).length;
   return (

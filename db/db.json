@@ -23,42 +23,6 @@
       ]
     },
     {
-      "id": "66a242acd12ee02c1da53a50",
-      "status": "DONE",
-      "title": "dolore deserunt aliquip culpa",
-      "description": "sunt deserunt quis consequat sit laboris quis aliquip elit et dolore do laboris culpa elit ea ad velit cillum fugiat",
-      "tr": 15,
-      "ti": 17,
-      "users": [
-        {
-          "id": "66a242acaf2fae0a1595a50c",
-          "name": "Lessie Barber"
-        },
-        {
-          "id": "66a242acdffd1e9e381a356d",
-          "name": "Martinez Miles"
-        },
-        {
-          "id": "66a242ac7301a1604c7344a6",
-          "name": "Lindsay Hancock"
-        }
-      ]
-    },
-    {
-      "id": "66a242ac5b2845b4496b93e1",
-      "status": "TEST",
-      "title": "laboris elit dolor id",
-      "description": "eu deserunt eu nostrud qui amet eiusmod et magna laboris nisi reprehenderit non fugiat dolor irure velit ea enim dolore",
-      "tr": 18,
-      "ti": 22,
-      "users": [
-        {
-          "id": "66a242ac688610e5dbee1e29",
-          "name": "Latonya Buckley"
-        }
-      ]
-    },
-    {
       "id": "66a242ac884e346c64d2efa3",
       "status": "TEST",
       "title": "mollit ea labore Lorem",
@@ -831,28 +795,6 @@
       ]
     },
     {
-      "id": "66a242ac571021ebac54dba9",
-      "status": "TEST",
-      "title": "sint fugiat enim est",
-      "description": "incididunt excepteur consectetur laboris aute do velit nulla excepteur nulla voluptate enim ad sit voluptate officia ut velit commodo labore",
-      "tr": 27,
-      "ti": 25,
-      "users": [
-        {
-          "id": "66a242acbe7f79bacc7cf714",
-          "name": "Sarah Suarez"
-        },
-        {
-          "id": "66a242acf26ee3fc471e5cf6",
-          "name": "Ellis Gilliam"
-        },
-        {
-          "id": "66a242ac319764560915778f",
-          "name": "Jackie Baldwin"
-        }
-      ]
-    },
-    {
       "id": "66a242ac0b7f50c587241809",
       "status": "WIP",
       "title": "cillum velit enim culpa",
@@ -885,24 +827,6 @@
         {
           "id": "66a242ac0ed37915da701c8a",
           "name": "Barr Maynard"
-        }
-      ]
-    },
-    {
-      "id": "66a242ac4a96f44a295127c3",
-      "status": "TEST",
-      "title": "esse fugiat dolore amet",
-      "description": "adipisicing enim quis ad ipsum labore amet culpa nisi dolor enim pariatur voluptate fugiat ipsum elit aliqua nostrud eu eiusmod",
-      "tr": 22,
-      "ti": 11,
-      "users": [
-        {
-          "id": "66a242acfee96ce3a414e9a9",
-          "name": "Natalie Britt"
-        },
-        {
-          "id": "66a242ac3875bc3785064e16",
-          "name": "Iva Taylor"
         }
       ]
     },

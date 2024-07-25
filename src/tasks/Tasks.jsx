@@ -5,19 +5,14 @@ import { deleteTask, search } from "../services/scrud";
 import { ApplicationContext } from "../context/ApplicationContextProvider";
 
 function Tasks() {
-  const {
-    state: { tasks },
-    updateTasks,
-  } = useContext(ApplicationContext);
+  const { state: { tasks },updateTasks,} = useContext(ApplicationContext);
 
 
   // Get All Tasks
   const getTasks = async () => {
     const response = await search({ path: "tasks" });
     const data = await response.json();
-    response.status === 200
-      ? updateTasks(data)
-      : alert(`${response.status} - Impossible de récupérer les datas`);
+    response.status === 200 ? updateTasks(data) : alert(`${response.status} - Impossible de récupérer les datas`);
   };
 
    // Delete by ID
@@ -30,6 +25,7 @@ function Tasks() {
         : alert("Erreur lors de la suppresion");
     }
   };
+
 
   useEffect(() => {
     getTasks();
