@@ -46,4 +46,4 @@ jobs:
            with:
             context: .
             push: true
-            tags: abyssefh/todolist:latest
+            tags: abyssefh/todolist:${{ github.sha }}
