@@ -26,6 +26,7 @@ jobs:
            with:
             node-version: '20.x'
          - run: npm ci
+         - run: npm run build
          - run: ls -al
 
          - name: Set up QEMU
