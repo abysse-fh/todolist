@@ -53,7 +53,7 @@ jobs:
            with:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.PASSWORD }}
+            key: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
             script: |
                docker stop todolist | echo "Aucun conteneur actif -- Rien à désactiver"
