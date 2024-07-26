@@ -48,14 +48,14 @@ jobs:
             push: true
             tags: abyssefh/todolist:${{ github.sha }}
          
-         # - name: executing remote ssh commands using password
-         #   uses: appleboy/ssh-action@v1.0.3
-         #   with:
-         #    host: ${{ secrets.HOST }}
-         #    username: ${{ secrets.USERNAME }}
-         #    password: ${{ secrets.PASSWORD }}
-         #    port: ${{ secrets.PORT }}
-         #    script: |
-         #       docker stop todolist | echo "Aucun conteneur actif -- Rien à désactiver"
-         #       docker rm -f todolist | echo "Aucun conteneur actif -- Rien à supprimer"
-         #       docker run --name todolist -p 92:80 -d todolist:${{ github.sha }}
+         - name: executing remote ssh commands using password
+           uses: appleboy/ssh-action@v1.0.3
+           with:
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            port: ${{ secrets.PORT }}
+            script: |
+               docker stop todolist | echo "Aucun conteneur actif -- Rien à désactiver"
+               docker rm -f todolist | echo "Aucun conteneur actif -- Rien à supprimer"
+               docker run --name todolist -p 3002git:80 -d todolist:${{ github.sha }}
