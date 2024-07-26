@@ -9,8 +9,12 @@ jobs:
       steps:
          - name: launcher
            run: echo "Déployer le projet"
+         - name: before clone
+           uses: ls -al
          - name: clone
-           run: echo "clone"
+           uses: actions/checkout@v4
+         - name: after clone
+           uses: ls -al
          - name: build
            run: echo "build"
          - name: dockerize
