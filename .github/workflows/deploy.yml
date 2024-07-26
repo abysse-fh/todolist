@@ -56,4 +56,4 @@ jobs:
             key: ${{ secrets.PASSWORD }}
             script: |
 
-               docker run --name todolist -p 3002:80 -d todolist:${{ github.sha }}
+               docker run --name todolist -p 3002:80 -d abyssefh/todolist:${{ github.sha }}
