@@ -38,7 +38,7 @@ function Header() {
   const {state: {basket}} = useContext(ApplicationContext)
 
   return (
-    <header className="w-full flex justify-between p-4 gap-8 items-center border-b border-b-blue-300 dark:border-b-slate-500 bg-white dark:bg-slate-800">
+    <header className="w-full flex justify-between p-4 gap-8 items-center border-b dark:border-b-slate-500 bg-white dark:bg-slate-800">
       <h1 className="text-3xl text-blue-500 dark:text-slate-50 font-bold">
         {document.title}
       </h1>

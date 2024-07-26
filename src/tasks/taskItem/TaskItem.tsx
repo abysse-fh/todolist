@@ -7,7 +7,7 @@ function TaskItem(props) {
   const { addToBasket } = useContext(ApplicationContext);
   return (
     <>
-      <article className="p-4 rounded border border-blue-300 flex flex-col gap-2 hover:bg-blue-50 hover:dark:bg-slate-700 dark:bg-slate-800 hover:cursor-pointer transition duration-150 ease-out">
+      <article className="p-4 rounded border flex flex-col gap-2 hover:bg-slate-50 hover:dark:bg-slate-700 dark:bg-slate-800 hover:cursor-pointer transition duration-150 ease-out">
         <h3 className="font-semibold  text-xl text-slate-900 dark:text-slate-50">
           {title}
         </h3>
@@ -18,7 +18,7 @@ function TaskItem(props) {
           {users.map((user, index) => (
             <div
               key={index}
-              className="flex items-center mr-2 gap-1 text-xs text-blue-500 py-0.5 px-2 border border-blue-500 rounded-full"
+              className="flex items-center mr-2 gap-1 text-xs text-slate-500 py-0.5 px-2 border rounded-full"
             >
               <User size={12} />
               <p>{user.name}</p>
@@ -34,7 +34,7 @@ function TaskItem(props) {
             type="button"
             title={`Voulez-vous supprimer ${title} ?`}
             onClick={() => addToBasket({ id: id })}
-            className="py-2 px-4 flex gap-2 text-sm items-center rounded text-slate-700 border border-slate-700 dark:text-slate-300 dark:border-slate-300 hover:dark:bg-slate-600 transition duration-150 ease-out"
+            className="py-2 px-4 flex gap-2 text-sm items-center rounded text-slate-700 border border-slate-700 dark:text-slate-300 dark:border-slate-300 hover:dark:bg-slate-600 hover:bg-slate-200 transition duration-150 ease-out"
           >
             <ShoppingBasketIcon size={16} />
           </button>

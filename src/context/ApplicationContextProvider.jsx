@@ -17,19 +17,6 @@ function ApplicationContextProvider({ children }) {
   const addToBasket = (data) => {
     dispatch({type: "ADD_TO_BASKET", data})
   }
-  // const updateTasks = (tasks) => {
-  //   setState((currentState) => {
-  //     const newState = { ...currentState, tasks };
-  //     return newState;
-  //   });
-  // };
-//   const addUser = (user) => {
-//    setState((currentState) => ({...currentState, users: [...currentState.users, user]}))
-//   };
-
-//   const addToBasket = (item) => {
-//    setState((currentState) => ({...currentState, basket: [...currentState.basket, item]}))
-//  };
 
   return (
     <ApplicationContext.Provider value={{ state, updateTasks, addToBasket }}>
