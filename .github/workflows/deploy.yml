@@ -1,9 +1,23 @@
 on:
    push:
+      branches:
+      - master
 
 jobs:
    deploy:
       runs-on: ubuntu-latest
       steps:
-         - name: "test"
-           run: echo "Deployer le projet"
+         - name: launcher
+           run: echo "Déployer le projet"
+         - name: clone
+           run: echo "clone"
+         - name: build
+           run: echo "build"
+         - name: dockerize
+           run: echo "dockerize"
+         - name: push to docker hub
+           run: echo "push to docker hub"
+         - name: connect to server
+           run: echo "connect to server"
+         - name: run container
+           run: echo "run container"
