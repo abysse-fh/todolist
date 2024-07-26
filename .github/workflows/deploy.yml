@@ -45,4 +45,4 @@ jobs:
            with:
             context: .
             push: true
-            tags: abyssefh/todolist:${{ env.GITHUB_SHA }}
+            tags: abyssefh/todolist:${{ env.GITHUB_JOB }}
