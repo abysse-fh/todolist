@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { STATUS } from "../utils/data";
+import { STATUS, TASKS } from "../utils/data";
 import TaskColumn from "./taskColumn/TaskColumn";
 import { deleteTask, search } from "../services/scrud";
 import { ApplicationContext } from "../context/ApplicationContextProvider";
@@ -10,9 +10,11 @@ function Tasks() {
 
   // Get All Tasks
   const getTasks = async () => {
-    const response = await search({ path: "tasks" });
+    /*const response = await search({ path: "tasks" });
     const data = await response.json();
-    response.status === 200 ? updateTasks(data) : alert(`${response.status} - Impossible de récupérer les datas`);
+    response.status === 200 ? */
+    updateTasks(TASKS) 
+    /*: alert(`${response.status} - Impossible de récupérer les datas`);*/
   };
 
    // Delete by ID
